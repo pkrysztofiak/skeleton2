@@ -1,6 +1,8 @@
 package pl.pkrysztofiak.skeleton2.view;
 
+import io.reactivex.Observable;
 import pl.pkrysztofiak.skeleton2.model.Model;
+import pl.pkrysztofiak.skeleton2.model.panel.PanelModel;
 
 public class Presenter {
 
@@ -8,5 +10,9 @@ public class Presenter {
     
     public Presenter() {
         
+    }
+    
+    public Observable<PanelModel> panelAddedObservable() {
+        return model.panelAddedObservable();
     }
 }

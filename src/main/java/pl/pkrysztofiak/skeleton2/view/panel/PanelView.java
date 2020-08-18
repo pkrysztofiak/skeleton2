@@ -12,7 +12,7 @@ public class PanelView extends VBox {
         
     }
     
-    public void setPresenter(PanelPresenter presenter) {
-        panelToolbarView.setPresenter(new PanelToolbarPresenter());
+    public void setPresenter(PanelPresenter panelPresenter) {
+        panelToolbarView.setPresenter(new PanelToolbarPresenter(panelPresenter));
     }
 }
